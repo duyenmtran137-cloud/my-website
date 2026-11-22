@@ -1,0 +1,81 @@
+/* =========================================================
+   Fukurai Premium – shared styles (used by index.html & story.html)
+   Layout/spacing comes from Tailwind; this file holds the theme.
+   ========================================================= */
+
+:root {
+  /* DAY MODE: Warm European Café */
+  --bg-main: #F7F3EC;
+  --bg-card: #FFFFFF;
+  --bg-accent: #EFE7DA;
+  --text-primary: #2C1E1A;
+  --text-secondary: #5E4B43;
+  --brand-color: #54161D;
+  --brand-text: #FFFFFF;
+  --gold: #B08D57;
+  --border-color: #E2D6C3;
+  --nav-bg: rgba(247, 243, 236, 0.94);
+}
+
+body.night-mode {
+  /* NIGHT MODE: Intimate Wine & Cocktail Bistro */
+  --bg-main: #180A0C;
+  --bg-card: #241013;
+  --bg-accent: #2E1418;
+  --text-primary: #F5EFE6;
+  --text-secondary: #CBBBA8;
+  --brand-color: #D4AF7A;
+  --brand-text: #180A0C;
+  --gold: #D4AF7A;
+  --border-color: #422025;
+  --nav-bg: rgba(24, 10, 12, 0.94);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Make the hidden attribute beat Tailwind's display classes (grid, flex…) */
+[hidden] { display: none !important; }
+
+.font-serif-luxury { font-family: 'Cormorant Garamond', serif; }
+
+.theme-surface,
+.theme-accent,
+.theme-nav {
+  border-color: var(--border-color);
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.theme-surface { background-color: var(--bg-card); }
+.theme-accent  { background-color: var(--bg-accent); }
+.theme-nav     { background-color: var(--nav-bg); }
+
+.theme-btn-primary {
+  background-color: var(--brand-color);
+  color: var(--brand-text);
+  border-color: var(--gold);
+  transition: all 0.3s ease;
+}
+
+.theme-text-muted  { color: var(--text-secondary); transition: color 0.5s ease; }
+.theme-text-main   { color: var(--text-primary); }
+.theme-gold        { color: var(--gold); }
+.theme-border      { border-color: var(--border-color); }
+.theme-border-gold { border-color: var(--gold); }
+
+/* Monogram logo (replaces the missing logo image) */
+.logo-mark {
+  background-color: var(--brand-color);
+  color: var(--brand-text);
+  border-color: var(--gold);
+}
+
+/* Page fade-in */
+.page-view { animation: fadeIn 0.4s ease; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
