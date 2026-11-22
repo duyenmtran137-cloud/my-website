@@ -107,7 +107,7 @@
   <header class="sticky top-0 z-50 theme-nav backdrop-blur-md border-b px-6 md:px-12 py-3.5">
     <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
       <!-- Brand Logo -->
-      <a href="#home" class="flex items-center gap-3 text-left">
+      <a href="index.html" class="flex items-center gap-3 text-left">
         <span class="logo-mark h-11 w-11 rounded-full border flex items-center justify-center font-serif-luxury text-lg font-bold shadow-sm">FP</span>
         <span>
           <span class="font-serif-luxury text-xl md:text-2xl font-bold tracking-widest uppercase block leading-none">Fukurai Premium</span>
@@ -119,7 +119,7 @@
       <nav class="flex flex-wrap items-center gap-5 md:gap-7">
         <a href="#menu" class="text-xs md:text-sm font-medium tracking-wider uppercase hover:opacity-75 transition-opacity">Menu</a>
         <a href="#space" class="text-xs md:text-sm font-medium tracking-wider uppercase hover:opacity-75 transition-opacity">The Space</a>
-        <a href="#story" class="text-xs md:text-sm font-medium tracking-wider uppercase hover:opacity-75 transition-opacity">Our Story</a>
+        <a href="story.html" class="text-xs md:text-sm font-medium tracking-wider uppercase hover:opacity-75 transition-opacity">Our Story</a>
         <button id="modeBtn" type="button" onclick="toggleMode()"
           class="theme-btn-primary border px-4 py-2 rounded-full text-xs font-semibold tracking-wider shadow-sm hover:-translate-y-0.5 hover:opacity-95 cursor-pointer">
           🌙 Switch to Night (Wine)
@@ -157,7 +157,7 @@
 
       <!-- Primary Call-to-Action Buttons -->
       <div class="flex flex-wrap items-center justify-center gap-4">
-        <a href="#story"
+        <a href="story.html"
           class="theme-btn-primary border px-7 py-3.5 rounded-lg text-xs md:text-sm font-semibold tracking-widest uppercase shadow-md hover:-translate-y-0.5 hover:opacity-95">
           Discover Our Story &amp; Space &rarr;
         </a>
@@ -310,71 +310,13 @@
     </footer>
   </main>
 
-  <!-- ========================================================= -->
-  <!-- PAGE 2: OUR STORY (ABOUT PAGE) — opened via #story         -->
-  <!-- ========================================================= -->
-  <main id="storyPage" class="page-view flex-grow" hidden>
-    <section class="max-w-4xl mx-auto px-6 md:px-12 py-14">
-      <a href="#home"
-        class="inline-flex items-center gap-2 theme-btn-primary border px-5 py-2.5 rounded-lg text-xs font-semibold tracking-widest uppercase mb-8 hover:opacity-90">
-        &larr; Back to Home
-      </a>
-
-      <p class="theme-gold text-xs md:text-sm font-semibold tracking-[0.28em] uppercase mb-3">The Concept · Page 2</p>
-      <h1 class="font-serif-luxury text-4xl sm:text-5xl font-semibold leading-tight mb-6">
-        A Classic European Apartment, Designed for Both Sunlit Coffee &amp; Midnight Wine
-      </h1>
-
-      <div class="space-y-5 theme-text-muted text-sm md:text-base leading-relaxed mb-10">
-        <p>
-          <strong class="theme-text-main">Fukurai Premium Café &amp; Bistro</strong> was created to feel less like a commercial venue and more like an intimate, classic European residence. Tucked away from the rush of the city, our two-story space pairs dark timber paneling, arched brick windows, and emerald velvet seating with warm pendant lighting that shifts effortlessly from morning clarity to evening warmth.
-        </p>
-        <p>
-          By day, guests gather around marble tables for freshly pulled espresso, velvety cappuccinos, and comforting pasta dishes in a quiet setting ideal for conversation or focused work. When evening arrives, the same space transforms into a refined cocktail and wine bistro featuring bespoke drinks tailored to your palate—Floral, Sour, Balanced, or Sweet—paired with pan-seared salmon, beef steak, and artisanal cold cuts.
-        </p>
-        <p>
-          Whether you visit for a quiet morning ritual or an unhurried evening with friends, our mezzanine lounge and main bar are designed to make every guest feel at home. Have a question about our menu or private bookings? Try our AI concierge in the bottom-right corner.
-        </p>
-      </div>
-
-      <!-- Story Photos -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-        <div class="rounded-xl overflow-hidden border theme-border bg-[#241414]">
-          <img src="assets/images/cafe/img_6442.jpg" alt="Arched windows and bar" loading="lazy" class="w-full h-72 object-cover">
-        </div>
-        <div class="rounded-xl overflow-hidden border theme-border bg-[#1B2A21]">
-          <img src="assets/images/cafe/img_6445.jpg" alt="Mezzanine overlooking the lounge" loading="lazy" class="w-full h-72 object-cover">
-        </div>
-      </div>
-
-      <!-- 3 Experience Pillars -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div class="theme-surface border rounded-xl p-6 shadow-sm">
-          <h3 class="font-serif-luxury text-2xl font-semibold theme-gold mb-2">Daytime Ritual</h3>
-          <p class="text-xs md:text-sm theme-text-muted leading-relaxed">8:00 AM – 5:00 PM. Specialty espresso, creamy lattes, and freshly made pasta beneath natural daylight.</p>
-        </div>
-        <div class="theme-surface border rounded-xl p-6 shadow-sm">
-          <h3 class="font-serif-luxury text-2xl font-semibold theme-gold mb-2">Evening Bistro</h3>
-          <p class="text-xs md:text-sm theme-text-muted leading-relaxed">5:00 PM – 11:30 PM. Bespoke cocktails, fine wines, and European mains in a candlelit mezzanine setting.</p>
-        </div>
-        <div class="theme-surface border rounded-xl p-6 shadow-sm">
-          <h3 class="font-serif-luxury text-2xl font-semibold theme-gold mb-2">Private Gatherings</h3>
-          <p class="text-xs md:text-sm theme-text-muted leading-relaxed">Intimate corner booths and upper-level seating available for small celebrations and curated workshops.</p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="theme-accent border-t mt-8 py-8 px-6 text-center">
-      <p class="text-xs theme-text-muted">&copy; 2026 Fukurai Premium Café &amp; Bistro · Crafted for Class 5 Lab</p>
-    </footer>
-  </main>
-
-  <!-- Interactive JavaScript: Day/Night Mode & Page Switching -->
+  <!-- Interactive JavaScript: Day/Night Mode, video, gallery -->
   <script>
-    // ---------- Day / Night Mode ----------
+    // ---------- Day / Night Mode (remembered across both pages) ----------
+    const MODE_KEY = 'fukurai-mode';
     const COPY = {
       day: {
-        btn: '🌙 Switch to Night (Wine)',
+        modeBtn: '🌙 Switch to Night (Wine)',
         heroTag: 'Daytime European Apartment Café',
         heroTitle: 'Slow Mornings & Artisanal Coffee',
         heroSub: 'Step inside our two-story European apartment sanctuary. Enjoy handcrafted espresso beneath arched windows by day, or switch to Night Mode to explore our evening wine and cocktail bistro.',
@@ -382,7 +324,7 @@
         menuSub: 'Crafted espresso classics & comforting European plates (Prices in VND).',
       },
       night: {
-        btn: '☀️ Switch to Day (Café)',
+        modeBtn: '☀️ Switch to Day (Café)',
         heroTag: 'Evening Wine & Cocktail Bistro',
         heroTitle: 'Velvet Evenings & Bespoke Cocktails',
         heroSub: 'As twilight falls, the lights dim across our mezzanine. Unwind with bespoke cocktails, artisanal cold cuts, and classic European dinner plates.',
@@ -391,34 +333,33 @@
       },
     };
 
-    function toggleMode() {
-      const isNight = document.body.classList.toggle('night-mode');
+    function applyMode(isNight) {
+      document.body.classList.toggle('night-mode', isNight);
       const copy = isNight ? COPY.night : COPY.day;
       for (const id in copy) {
-        const key = id === 'btn' ? 'modeBtn' : id;
-        document.getElementById(key).textContent = copy[id];
+        const el = document.getElementById(id);   // some ids only exist on the home page
+        if (el) el.textContent = copy[id];
       }
-      document.getElementById('dayMenu').hidden = isNight;
-      document.getElementById('nightMenu').hidden = !isNight;
-    }
-
-    // ---------- Two-page navigation (#home / #story) ----------
-    // Each page has its own link: index.html#story opens Page 2 directly.
-    function route() {
-      const hash = location.hash.slice(1) || 'home';
-      const isStory = hash === 'story';
-      document.getElementById('homePage').hidden = isStory;
-      document.getElementById('storyPage').hidden = !isStory;
-
-      const target = isStory ? null : document.getElementById(hash);
-      if (target && hash !== 'home') {
-        setTimeout(() => target.scrollIntoView({ behavior: 'smooth' }), 50);
-      } else {
-        window.scrollTo({ top: 0 });
+      const dayMenu = document.getElementById('dayMenu');
+      const nightMenu = document.getElementById('nightMenu');
+      if (dayMenu && nightMenu) {
+        dayMenu.hidden = isNight;
+        nightMenu.hidden = !isNight;
       }
     }
-    window.addEventListener('hashchange', route);
-    route();
+
+    function toggleMode() {
+      const isNight = !document.body.classList.contains('night-mode');
+      applyMode(isNight);
+      try { localStorage.setItem(MODE_KEY, isNight ? 'night' : 'day'); } catch (e) {}
+    }
+
+    let savedMode = 'day';
+    try { savedMode = localStorage.getItem(MODE_KEY) || 'day'; } catch (e) {}
+    applyMode(savedMode === 'night');
+
+    // Old links to …/#story now open the real second page
+    if (location.hash === '#story') location.replace('story.html');
 
     // ---------- Make sure the hero video starts (autoplay + loop) ----------
     const video = document.getElementById('heroVideo');
