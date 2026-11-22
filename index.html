@@ -8,7 +8,7 @@
   <!-- If a local image/video path fails (e.g. in an HTML preview tool),
        load the same file from the GitHub repo via the jsDelivr CDN. -->
   <script>
-    const CDN = 'https://cdn.jsdelivr.net/gh/duyenmtran137-cloud/my-website@main/';
+    const CDN = 'https://raw.githubusercontent.com/duyenmtran137-cloud/my-website/main/';
     window.addEventListener('error', (e) => {
       const el = e.target;
       if (el.tagName === 'IMG' && !el.dataset.cdn) {
@@ -281,27 +281,8 @@
         <p class="theme-text-muted text-sm md:text-base">Warm wood, emerald velvet booths, and an intimate mezzanine bar.</p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="rounded-xl overflow-hidden border theme-border bg-[#221614] shadow-sm group">
-          <img src="assets/images/cafe/img_6431.jpg" alt="Bar and arched wine shelves" loading="lazy"
-            class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
-        </div>
-        <div class="rounded-xl overflow-hidden border theme-border bg-[#1B2B22] shadow-sm group">
-          <img src="assets/images/cafe/img_6440.jpg" alt="Two-story European mezzanine lounge" loading="lazy"
-            class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
-        </div>
-        <div class="rounded-xl overflow-hidden border theme-border bg-[#1F2D24] shadow-sm group">
-          <img src="assets/images/cafe/img_6437.jpg" alt="Emerald velvet corner booth" loading="lazy"
-            class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
-        </div>
-        <div class="rounded-xl overflow-hidden border theme-border bg-[#2C1A16] shadow-sm group">
-          <img src="assets/images/cafe/img_6435.jpg" alt="Mezzanine table overlooking the bar" loading="lazy"
-            class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
-        </div>
-      </div>
-
-      <!-- Apartment rooms -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-5">
+      <!-- 3 apartment photos, shown in random order on each visit -->
+      <div id="aptGallery" class="grid grid-cols-1 sm:grid-cols-3 gap-5">
         <div class="rounded-xl overflow-hidden border theme-border bg-[#2C1A16] shadow-sm group">
           <img src="assets/images/apartment/img_3975.jpg" alt="Apartment bedroom with tall curtained window" loading="lazy"
             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
@@ -443,6 +424,15 @@
     const video = document.getElementById('heroVideo');
     video.muted = true;
     video.play().catch(() => {});
+
+    // ---------- Shuffle the 3 apartment photos ----------
+    const gallery = document.getElementById('aptGallery');
+    const tiles = [...gallery.children];
+    for (let i = tiles.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [tiles[i], tiles[j]] = [tiles[j], tiles[i]];
+    }
+    tiles.forEach((t) => gallery.appendChild(t));
   </script>
 
   <!-- Chatling Chatbot Embed (Lab 3) — visible on both pages -->
